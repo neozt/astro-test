@@ -1,0 +1,18 @@
+---
+import Button from "../../components/Button.astro";
+export function getStaticPaths() {
+    return new Array(10).fill(0).map((val, index) => ({params: {num: index + 1}}));
+}
+
+const { num } = Astro.params;
+---
+
+<Button class="text-red-500">
+    <a href="/about/">
+        &lt; Back
+    </a>
+</Button>
+
+<h1>
+    About - {num}
+</h1>

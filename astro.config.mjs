@@ -6,5 +6,5 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()],
   site: 'https://neozt.github.io',
-  // base: '/my-repo',
+  base: '/astro-test',
 });

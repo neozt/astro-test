@@ -1,7 +1,11 @@
 ---
 import Button from "../../components/Button.astro";
 export function getStaticPaths() {
-    return new Array(10).fill(0).map((val, index) => ({params: {num: index + 1}}));
+    return [
+        {params: {num: 1}},
+        {params: {num: 2}},
+        {params: {num: 3}},
+    ];
 }
 
 const { num } = Astro.params;

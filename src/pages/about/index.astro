@@ -1,6 +1,6 @@
 ---
 import Button from "../../components/Button.astro";
-const buttonNums = [1, 2, 3];
+const buttonNums = new Array(10).fill(0).map((_val, index) => index + 1);
 ---
 
 <h1 class="text-lg font-bold">
